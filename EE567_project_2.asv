@@ -1,0 +1,18 @@
+EbN0 = 0.00:0.01:12-0.01;
+P_b = qfunc(sqrt(2*EbN0));
+semilogy(EbN0,P_b);
+
+
+E_b = EbN0;
+A = sqrt(E_b); %A = sqrt(2*E_b);
+N = 8;
+sigmasq = 1;
+N_0 = 2*sigmasq;
+n_k = randn([1,N]).*sigmasq;
+% s_k = A + n_k;
+y = (1/N)*(sum(s_k));
+
+for i = 1:length(E_b)
+    y[
+
+end
